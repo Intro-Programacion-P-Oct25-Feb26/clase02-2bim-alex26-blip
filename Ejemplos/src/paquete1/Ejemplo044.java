@@ -26,8 +26,8 @@ public class Ejemplo044 {
         // arreglo1[2] = 1000;
         for (int i = 0; i < a1.length; i++) {
             int valor = a1[i];
-            if (a1[i]>= 1000  || a1[i] %2 == 0 )  {
-            suma = suma + a1[i];
+            if (valor >= 1000  || valor %2 == 0 )  {
+            suma = suma + valor;
             acumulador = String.format("%sSubíndice o Índice %d, "
                     + "con valor %d\n", 
                     acumulador,i, a1[i]);
