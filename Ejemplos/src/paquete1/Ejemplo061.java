@@ -28,11 +28,26 @@ public class Ejemplo061 {
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.println("Ingrese un valor para el arreglo");
             dato = entrada.nextLine();
+            String letra = dato.substring(0,1);
+            letra = letra.toLowerCase();
+            switch (letra ){
+                case "a":
+                case "e":
+                case "i":
+                case "o": 
+                case "u":
+                arreglo1[i] = dato;
+                break;
+                default:
+                arreglo1[i] = "invalido";
+                
             // se asigna la variable dato a la posición del arreglo
             // de acuerdo al valor de i
-            arreglo1[i] = dato;
+            
+                 
+                
         }
-        
+        }
         // Se hace uso del ciclo repetitivo for para recorrer el arreglo
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.printf("Subíndice o Índice %d, con valor %s\n",
