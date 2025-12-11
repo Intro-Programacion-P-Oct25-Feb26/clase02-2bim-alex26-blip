@@ -17,7 +17,7 @@ public class Ejemplo09 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // Declarar y generar arreglos en Java
+        // Declarar y generar aredios =  {8reglos en Java
         
         // Se declara un arreglo de tipo double, llamado promedios
         double[] promedios =  {8.1, 9, 9.5, 10, 9.9};
@@ -26,8 +26,9 @@ public class Ejemplo09 {
         String mensajeFinal = ""; // variable que acumula un reporte final
         // Se hace uso del ciclo repetitivo for para recorrer los arreglos
         // y presentar los valore de las posiciones
-        
-        for (int i = 0; i < promedios.length; i++) { // estudiantes.length 
+        int tamaño  = promedios.length;
+        //for (int i = 0; i < estudiantes.length; i++) { // estudiantes.length 
+        for (int i = 0; i < tamaño; i++) { // estudiantes.length 
             mensajeFinal = String.format("%sEstudiante:%s - promedio: %.4f\n", 
                     mensajeFinal,
                     estudiantes[i].toUpperCase(),
